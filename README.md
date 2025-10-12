@@ -1,4 +1,4 @@
-# Maddy Chatmail Server
+# Madmail - Maddy Chatmail Server
 > Optimized all-in-one mail server for instant, secure messaging
 
 This is a specialized fork of [Maddy Mail Server](https://github.com/foxcpp/maddy) optimized specifically for **chatmail** deployments. It provides a single binary solution for running secure, encrypted-only email servers designed for Delta Chat and similar messaging applications.
@@ -67,8 +67,8 @@ services:
       - caddy_config:/config
     restart: unless-stopped
 
-  maddy-chatmail:
-    image: ghcr.io/sadraiiali/maddy_chatmail:latest
+  madmail:
+    image: ghcr.io/sadraiiali/madmail:latest
     environment:
       # MADDY_HOSTNAME: hostname used for SMTP/IMAP MX and TLS
       - MADDY_HOSTNAME=mail.yourdomain.com
@@ -114,7 +114,7 @@ Caddy will automatically obtain SSL certificates for your domain and proxy reque
 
 - Make sure DNS A/AAAA records for `yourdomain.com` and `mail.yourdomain.com` point to the server running Caddy.
 - Open ports 80 and 443 on the host so Caddy can perform ACME challenges and serve TLS.
-- The example expects the chatmail HTTP endpoint to listen on port 8080 inside the `maddy-chatmail` container (see the `chatmail` endpoint example below).
+- The example expects the chatmail HTTP endpoint to listen on port 8080 inside the `madmail` container (see the `chatmail` endpoint example below).
 
 For detailed setup instructions including manual installation, TLS certificates, and DNS configuration, see the [Setup Guide](docs/chatmail-setup.md).
 
