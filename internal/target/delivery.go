@@ -19,8 +19,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 package target
 
 import (
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
+	"github.com/sadraiiali/madmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/module"
 )
 
 func DeliveryLogger(l log.Logger, msgMeta *module.MsgMetadata) log.Logger {

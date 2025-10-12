@@ -27,11 +27,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	"github.com/sadraiiali/maddy_chatmail/framework/dns"
-	"github.com/sadraiiali/maddy_chatmail/framework/exterrors"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/smtpconn"
+	"github.com/sadraiiali/madmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/dns"
+	"github.com/sadraiiali/madmail/framework/exterrors"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/smtpconn"
 )
 
 type mxConn struct {

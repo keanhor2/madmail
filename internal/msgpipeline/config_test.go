@@ -23,8 +23,8 @@ import (
 	"strings"
 	"testing"
 
-	parser "github.com/sadraiiali/maddy_chatmail/framework/cfgparser"
-	"github.com/sadraiiali/maddy_chatmail/framework/exterrors"
+	parser "github.com/sadraiiali/madmail/framework/cfgparser"
+	"github.com/sadraiiali/madmail/framework/exterrors"
 )
 
 func policyError(code int) error {

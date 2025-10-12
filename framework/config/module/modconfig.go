@@ -32,11 +32,11 @@ import (
 	"reflect"
 	"strings"
 
-	parser "github.com/sadraiiali/maddy_chatmail/framework/cfgparser"
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	"github.com/sadraiiali/maddy_chatmail/framework/hooks"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
+	parser "github.com/sadraiiali/madmail/framework/cfgparser"
+	"github.com/sadraiiali/madmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/hooks"
+	"github.com/sadraiiali/madmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/module"
 )
 
 // createInlineModule is a helper function for config matchers that can create inline modules.

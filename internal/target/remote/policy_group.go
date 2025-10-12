@@ -19,9 +19,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 package remote
 
 import (
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	modconfig "github.com/sadraiiali/maddy_chatmail/framework/config/module"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
+	"github.com/sadraiiali/madmail/framework/config"
+	modconfig "github.com/sadraiiali/madmail/framework/config/module"
+	"github.com/sadraiiali/madmail/framework/module"
 )
 
 // PolicyGroup is a module container for a group of Policy implementations.

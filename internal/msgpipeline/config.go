@@ -23,13 +23,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/address"
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	modconfig "github.com/sadraiiali/maddy_chatmail/framework/config/module"
-	"github.com/sadraiiali/maddy_chatmail/framework/dns"
-	"github.com/sadraiiali/maddy_chatmail/framework/exterrors"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/modify"
+	"github.com/sadraiiali/madmail/framework/address"
+	"github.com/sadraiiali/madmail/framework/config"
+	modconfig "github.com/sadraiiali/madmail/framework/config/module"
+	"github.com/sadraiiali/madmail/framework/dns"
+	"github.com/sadraiiali/madmail/framework/exterrors"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/modify"
 )
 
 type sourceIn struct {

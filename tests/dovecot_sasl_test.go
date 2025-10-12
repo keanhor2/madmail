@@ -38,7 +38,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sadraiiali/maddy_chatmail/tests"
+	"github.com/sadraiiali/madmail/tests"
 )
 
 var DovecotExecutable string

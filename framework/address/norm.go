@@ -23,7 +23,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/dns"
+	"github.com/sadraiiali/madmail/framework/dns"
 	"golang.org/x/net/idna"
 	"golang.org/x/text/secure/precis"
 	"golang.org/x/text/unicode/norm"

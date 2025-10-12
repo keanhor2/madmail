@@ -125,7 +125,7 @@ Pre-built release artifacts for common platforms are published on the repository
 - macOS (amd64, arm64)
 - windows (amd64, arm64)
 
-To download the latest release, visit: https://github.com/sadraiiali/maddy_chatmail/releases and pick the artifact matching your OS/architecture. Artifacts are packaged as tar.gz (Linux/macOS) or zip (Windows) and include a `maddy` binary and the default `maddy.conf`.
+To download the latest release, visit: https://github.com/sadraiiali/madmail/releases and pick the artifact matching your OS/architecture. Artifacts are packaged as tar.gz (Linux/macOS) or zip (Windows) and include a `maddy` binary and the default `maddy.conf`.
 
 If you prefer to build locally, see the "Building from source" tutorial in the docs (it also documents how to use the releases and how to embed version information): docs/tutorials/building-from-source.md
 

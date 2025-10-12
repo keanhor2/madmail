@@ -24,7 +24,7 @@ package tests_test
 import (
 	"testing"
 
-	"github.com/sadraiiali/maddy_chatmail/tests"
+	"github.com/sadraiiali/madmail/tests"
 )
 
 func TestReplaceAddr_Rcpt(tt *testing.T) {

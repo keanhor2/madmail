@@ -25,12 +25,12 @@ import (
 	"net"
 
 	"github.com/emersion/go-sasl"
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	modconfig "github.com/sadraiiali/maddy_chatmail/framework/config/module"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/auth/sasllogin"
-	"github.com/sadraiiali/maddy_chatmail/internal/authz"
+	"github.com/sadraiiali/madmail/framework/config"
+	modconfig "github.com/sadraiiali/madmail/framework/config/module"
+	"github.com/sadraiiali/madmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/auth/sasllogin"
+	"github.com/sadraiiali/madmail/internal/authz"
 )
 
 var (

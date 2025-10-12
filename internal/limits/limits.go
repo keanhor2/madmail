@@ -32,9 +32,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/limits/limiters"
+	"github.com/sadraiiali/madmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/limits/limiters"
 )
 
 type Group struct {

@@ -24,10 +24,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/auth/pass_table"
-	maddycli "github.com/sadraiiali/maddy_chatmail/internal/cli"
-	clitools2 "github.com/sadraiiali/maddy_chatmail/internal/cli/clitools"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/auth/pass_table"
+	maddycli "github.com/sadraiiali/madmail/internal/cli"
+	clitools2 "github.com/sadraiiali/madmail/internal/cli/clitools"
 	"github.com/urfave/cli/v2"
 	"golang.org/x/crypto/bcrypt"
 )

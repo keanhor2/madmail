@@ -34,7 +34,7 @@ export PATH="$PWD/go/bin:$PATH"
 1. Clone repository
 ```
 # clone this fork (or the upstream maddy if you prefer)
-$ git clone https://github.com/sadraiiali/maddy_chatmail.git
+$ git clone https://github.com/sadraiiali/madmail.git
 $ cd maddy_chatmail
 ```
 
@@ -42,7 +42,7 @@ $ cd maddy_chatmail
 
 Pre-built release artifacts are published to the GitHub Releases page for this repository. Downloads include platform-specific archives (tar.gz or zip) containing the `maddy` binary and default config files. Visit:
 
-https://github.com/sadraiiali/maddy_chatmail/releases
+https://github.com/sadraiiali/madmail/releases
 
 You can also build locally from a tag or branch:
 ```

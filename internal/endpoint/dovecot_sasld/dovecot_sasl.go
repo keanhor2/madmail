@@ -27,12 +27,12 @@ import (
 
 	"github.com/emersion/go-sasl"
 	dovecotsasl "github.com/foxcpp/go-dovecot-sasl"
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	modconfig "github.com/sadraiiali/maddy_chatmail/framework/config/module"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/auth"
-	"github.com/sadraiiali/maddy_chatmail/internal/authz"
+	"github.com/sadraiiali/madmail/framework/config"
+	modconfig "github.com/sadraiiali/madmail/framework/config/module"
+	"github.com/sadraiiali/madmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/auth"
+	"github.com/sadraiiali/madmail/internal/authz"
 )
 
 const modName = "dovecot_sasld"

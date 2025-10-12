@@ -24,9 +24,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	"github.com/sadraiiali/maddy_chatmail/framework/exterrors"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
+	"github.com/sadraiiali/madmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/exterrors"
+	"github.com/sadraiiali/madmail/framework/module"
 )
 
 // FailAction specifies actions that messages pipeline should take based on the

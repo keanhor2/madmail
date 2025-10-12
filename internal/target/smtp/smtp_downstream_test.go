@@ -27,9 +27,9 @@ import (
 	"testing"
 
 	"github.com/emersion/go-smtp"
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	"github.com/sadraiiali/maddy_chatmail/framework/exterrors"
-	"github.com/sadraiiali/maddy_chatmail/internal/testutils"
+	"github.com/sadraiiali/madmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/exterrors"
+	"github.com/sadraiiali/madmail/internal/testutils"
 )
 
 var testPort string

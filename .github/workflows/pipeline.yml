@@ -3,7 +3,7 @@ name: "CI Release Pipeline"
 on:
   push:
     tags: [ 'v*' ]
-    branches: [ master, dev ]
+    branches: [ main, dev ]
 
 
 permissions:
@@ -213,14 +213,14 @@ jobs:
         id: meta
         with:
           images: |
-            ghcr.io/sadraiiali/maddy_chatmail
+            ghcr.io/sadraiiali/madmail
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
           labels: |
             org.opencontainers.image.title=Maddy Chatmail Server
-            org.opencontainers.image.documentation=https://github.com/sadraiiali/maddy_chatmail
-            org.opencontainers.image.url=https://github.com/sadraiiali/maddy_chatmail
+            org.opencontainers.image.documentation=https://github.com/sadraiiali/madmail
+            org.opencontainers.image.url=https://github.com/sadraiiali/madmail
       - name: Build and push
         uses: docker/build-push-action@v6
         id: docker
@@ -234,7 +234,7 @@ jobs:
       - name: Generate container attestation
         uses: actions/attest-build-provenance@v2
         with:
-          subject-name: ghcr.io/sadraiiali/maddy_chatmail
+          subject-name: ghcr.io/sadraiiali/madmail
           subject-digest: ${{ steps.docker.outputs.digest }}
           push-to-registry: true
 

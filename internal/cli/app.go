@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/log"
 	"github.com/urfave/cli/v2"
 )
 

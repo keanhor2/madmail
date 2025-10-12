@@ -26,8 +26,8 @@ import (
 
 	"github.com/emersion/go-message/textproto"
 	"github.com/google/uuid"
-	"github.com/sadraiiali/maddy_chatmail/framework/exterrors"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
+	"github.com/sadraiiali/madmail/framework/exterrors"
+	"github.com/sadraiiali/madmail/framework/module"
 )
 
 var (

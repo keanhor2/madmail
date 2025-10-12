@@ -19,10 +19,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 package requiretls
 
 import (
-	modconfig "github.com/sadraiiali/maddy_chatmail/framework/config/module"
-	"github.com/sadraiiali/maddy_chatmail/framework/exterrors"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/check"
+	modconfig "github.com/sadraiiali/madmail/framework/config/module"
+	"github.com/sadraiiali/madmail/framework/exterrors"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/check"
 )
 
 func requireTLS(ctx check.StatelessCheckContext) module.CheckResult {

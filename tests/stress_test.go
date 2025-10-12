@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sadraiiali/maddy_chatmail/tests"
+	"github.com/sadraiiali/madmail/tests"
 )
 
 func floodSmtp(c *tests.Conn, commands, expectedPatterns []string, iterations int) {

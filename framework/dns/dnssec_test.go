@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/miekg/dns"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/log"
 )
 
 type TestSrvAction int

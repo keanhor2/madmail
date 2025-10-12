@@ -11,10 +11,10 @@ import (
 	"time"
 
 	"github.com/go-ldap/ldap/v3"
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	tls2 "github.com/sadraiiali/maddy_chatmail/framework/config/tls"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
+	"github.com/sadraiiali/madmail/framework/config"
+	tls2 "github.com/sadraiiali/madmail/framework/config/tls"
+	"github.com/sadraiiali/madmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/module"
 )
 
 const modName = "auth.ldap"

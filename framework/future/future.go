@@ -23,7 +23,7 @@ import (
 	"runtime/debug"
 	"sync"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/log"
 )
 
 // The Future object implements a container for (value, error) pair that "will

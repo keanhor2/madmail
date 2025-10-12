@@ -43,8 +43,8 @@ import (
 
 	_ "embed" // for embedding templates
 
-	maddycli "github.com/sadraiiali/maddy_chatmail/internal/cli"
-	clitools2 "github.com/sadraiiali/maddy_chatmail/internal/cli/clitools"
+	maddycli "github.com/sadraiiali/madmail/internal/cli"
+	clitools2 "github.com/sadraiiali/madmail/internal/cli/clitools"
 	"github.com/urfave/cli/v2"
 )
 

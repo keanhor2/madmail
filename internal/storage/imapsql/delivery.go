@@ -27,10 +27,10 @@ import (
 	"github.com/emersion/go-message/textproto"
 	"github.com/emersion/go-smtp"
 	imapsql "github.com/foxcpp/go-imap-sql"
-	"github.com/sadraiiali/maddy_chatmail/framework/buffer"
-	"github.com/sadraiiali/maddy_chatmail/framework/exterrors"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/target"
+	"github.com/sadraiiali/madmail/framework/buffer"
+	"github.com/sadraiiali/madmail/framework/exterrors"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/target"
 )
 
 type addedRcpt struct {

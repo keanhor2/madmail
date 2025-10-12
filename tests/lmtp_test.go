@@ -26,8 +26,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sadraiiali/maddy_chatmail/internal/testutils"
-	"github.com/sadraiiali/maddy_chatmail/tests"
+	"github.com/sadraiiali/madmail/internal/testutils"
+	"github.com/sadraiiali/madmail/tests"
 )
 
 func TestLMTPServer_Is_Actually_LMTP(tt *testing.T) {

@@ -23,8 +23,8 @@ import (
 
 	"github.com/emersion/go-message/textproto"
 	"github.com/emersion/go-smtp"
-	"github.com/sadraiiali/maddy_chatmail/framework/buffer"
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/buffer"
+	"github.com/sadraiiali/madmail/framework/config"
 )
 
 // Dummy is a struct that implements PlainAuth and DeliveryTarget

@@ -22,7 +22,7 @@ import (
 	"context"
 
 	"github.com/emersion/go-message/textproto"
-	"github.com/sadraiiali/maddy_chatmail/framework/buffer"
+	"github.com/sadraiiali/madmail/framework/buffer"
 )
 
 // Modifier is the module interface for modules that can mutate the

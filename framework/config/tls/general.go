@@ -21,8 +21,8 @@ package tls
 import (
 	"crypto/tls"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/log"
 )
 
 var strVersionsMap = map[string]uint16{

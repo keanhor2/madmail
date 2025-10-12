@@ -25,12 +25,12 @@ import (
 
 	"github.com/emersion/go-message/textproto"
 	"github.com/emersion/go-msgauth/authres"
-	"github.com/sadraiiali/maddy_chatmail/framework/buffer"
-	"github.com/sadraiiali/maddy_chatmail/framework/dns"
-	"github.com/sadraiiali/maddy_chatmail/framework/exterrors"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/dmarc"
+	"github.com/sadraiiali/madmail/framework/buffer"
+	"github.com/sadraiiali/madmail/framework/dns"
+	"github.com/sadraiiali/madmail/framework/exterrors"
+	"github.com/sadraiiali/madmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/dmarc"
 )
 
 // checkRunner runs groups of checks, collects and merges results.

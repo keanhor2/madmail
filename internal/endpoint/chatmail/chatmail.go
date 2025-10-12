@@ -31,11 +31,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	tls2 "github.com/sadraiiali/maddy_chatmail/framework/config/tls"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/auth/pass_table"
+	"github.com/sadraiiali/madmail/framework/config"
+	tls2 "github.com/sadraiiali/madmail/framework/config/tls"
+	"github.com/sadraiiali/madmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/auth/pass_table"
 	"github.com/skip2/go-qrcode"
 	"golang.org/x/crypto/bcrypt"
 )

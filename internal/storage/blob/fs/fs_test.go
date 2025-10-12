@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/storage/blob"
-	"github.com/sadraiiali/maddy_chatmail/internal/testutils"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/storage/blob"
+	"github.com/sadraiiali/madmail/internal/testutils"
 )
 
 func TestFS(t *testing.T) {

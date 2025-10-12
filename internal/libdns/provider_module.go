@@ -2,7 +2,7 @@ package libdns
 
 import (
 	"github.com/libdns/libdns"
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/config"
 )
 
 type ProviderModule struct {

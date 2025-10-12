@@ -1,4 +1,4 @@
-module github.com/sadraiiali/maddy_chatmail
+module github.com/sadraiiali/madmail
 
 go 1.23.1
 

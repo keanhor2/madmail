@@ -20,7 +20,7 @@ builds:
       - -w
       # support embedding version for both the upstream package path and this fork's module path
       - -X "github.com/foxcpp/maddy.Version={{.Version}}"
-      - -X "github.com/sadraiiali/maddy_chatmail.Version={{.Version}}"
+      - -X "github.com/sadraiiali/madmail.Version={{.Version}}"
     # Some targets (like static linux builds) may require special tags; leave tags optional
     tags: "osusergo netgo"
 

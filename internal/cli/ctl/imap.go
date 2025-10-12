@@ -29,9 +29,9 @@ import (
 
 	"github.com/emersion/go-imap"
 	imapsql "github.com/foxcpp/go-imap-sql"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	maddycli "github.com/sadraiiali/maddy_chatmail/internal/cli"
-	clitools2 "github.com/sadraiiali/maddy_chatmail/internal/cli/clitools"
+	"github.com/sadraiiali/madmail/framework/module"
+	maddycli "github.com/sadraiiali/madmail/internal/cli"
+	clitools2 "github.com/sadraiiali/madmail/internal/cli/clitools"
 	"github.com/urfave/cli/v2"
 )
 

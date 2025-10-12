@@ -22,7 +22,7 @@ import (
 	"context"
 
 	"github.com/emersion/go-message/textproto"
-	"github.com/sadraiiali/maddy_chatmail/framework/buffer"
+	"github.com/sadraiiali/madmail/framework/buffer"
 )
 
 // StatusCollector is an object that is passed by message source

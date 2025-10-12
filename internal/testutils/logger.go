@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/log"
 )
 
 var (

@@ -31,8 +31,8 @@ import (
 
 	"github.com/emersion/go-message/textproto"
 	"github.com/emersion/go-smtp"
-	"github.com/sadraiiali/maddy_chatmail/framework/address"
-	"github.com/sadraiiali/maddy_chatmail/framework/dns"
+	"github.com/sadraiiali/madmail/framework/address"
+	"github.com/sadraiiali/madmail/framework/dns"
 )
 
 type ReportingMTAInfo struct {

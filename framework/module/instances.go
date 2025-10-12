@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	"github.com/sadraiiali/maddy_chatmail/framework/hooks"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/hooks"
+	"github.com/sadraiiali/madmail/framework/log"
 )
 
 var (

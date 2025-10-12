@@ -21,7 +21,7 @@ package milter
 import (
 	"testing"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/config"
 )
 
 func TestAcceptValidEndpoints(t *testing.T) {

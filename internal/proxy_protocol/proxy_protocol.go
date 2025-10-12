@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	"github.com/c0va23/go-proxyprotocol"
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	tls2 "github.com/sadraiiali/maddy_chatmail/framework/config/tls"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/config"
+	tls2 "github.com/sadraiiali/madmail/framework/config/tls"
+	"github.com/sadraiiali/madmail/framework/log"
 )
 
 type ProxyProtocol struct {

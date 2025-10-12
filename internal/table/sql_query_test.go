@@ -27,8 +27,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	"github.com/sadraiiali/maddy_chatmail/internal/testutils"
+	"github.com/sadraiiali/madmail/framework/config"
+	"github.com/sadraiiali/madmail/internal/testutils"
 )
 
 func TestSQL(t *testing.T) {

@@ -26,8 +26,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/hooks"
-	"github.com/sadraiiali/maddy_chatmail/framework/log"
+	"github.com/sadraiiali/madmail/framework/hooks"
+	"github.com/sadraiiali/madmail/framework/log"
 )
 
 // handleSignals function creates and listens on OS signals channel.

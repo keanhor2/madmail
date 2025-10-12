@@ -9,9 +9,9 @@ import (
 
 	backendtests "github.com/foxcpp/go-imap-backend-tests"
 	imapsql "github.com/foxcpp/go-imap-sql"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	imapsql2 "github.com/sadraiiali/maddy_chatmail/internal/storage/imapsql"
-	"github.com/sadraiiali/maddy_chatmail/internal/testutils"
+	"github.com/sadraiiali/madmail/framework/module"
+	imapsql2 "github.com/sadraiiali/madmail/internal/storage/imapsql"
+	"github.com/sadraiiali/madmail/internal/testutils"
 )
 
 type testBack struct {

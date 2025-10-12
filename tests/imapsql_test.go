@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sadraiiali/maddy_chatmail/tests"
+	"github.com/sadraiiali/madmail/tests"
 )
 
 // Smoke test to ensure message delivery is handled correctly.

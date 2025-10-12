@@ -21,12 +21,12 @@ package dns
 import (
 	"strings"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/address"
-	modconfig "github.com/sadraiiali/maddy_chatmail/framework/config/module"
-	"github.com/sadraiiali/maddy_chatmail/framework/dns"
-	"github.com/sadraiiali/maddy_chatmail/framework/exterrors"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/check"
+	"github.com/sadraiiali/madmail/framework/address"
+	modconfig "github.com/sadraiiali/madmail/framework/config/module"
+	"github.com/sadraiiali/madmail/framework/dns"
+	"github.com/sadraiiali/madmail/framework/exterrors"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/check"
 )
 
 func requireMatchingRDNS(ctx check.StatelessCheckContext) module.CheckResult {

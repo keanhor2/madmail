@@ -24,12 +24,12 @@ import (
 	"io"
 	"os"
 
-	maddy "github.com/sadraiiali/maddy_chatmail"
-	parser "github.com/sadraiiali/maddy_chatmail/framework/cfgparser"
-	"github.com/sadraiiali/maddy_chatmail/framework/config"
-	"github.com/sadraiiali/maddy_chatmail/framework/hooks"
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/updatepipe"
+	maddy "github.com/sadraiiali/madmail"
+	parser "github.com/sadraiiali/madmail/framework/cfgparser"
+	"github.com/sadraiiali/madmail/framework/config"
+	"github.com/sadraiiali/madmail/framework/hooks"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/updatepipe"
 	"github.com/urfave/cli/v2"
 )
 

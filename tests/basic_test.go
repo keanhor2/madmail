@@ -24,7 +24,7 @@ package tests_test
 import (
 	"testing"
 
-	"github.com/sadraiiali/maddy_chatmail/tests"
+	"github.com/sadraiiali/madmail/tests"
 )
 
 func TestBasic(tt *testing.T) {

@@ -49,7 +49,7 @@ docker run -d \
   -p 993:993 \
   -p 80:80 \
   -p 443:443 \
-  ghcr.io/sadraiiali/maddy_chatmail:latest
+  ghcr.io/sadraiiali/madmail:latest
 
 # Copy TLS certificates to the container
 docker cp /path/to/fullchain.pem maddy-chatmail:/data/tls/fullchain.pem
@@ -68,7 +68,7 @@ version: '3.8'
 
 services:
   maddy-chatmail:
-    image: ghcr.io/sadraiiali/maddy_chatmail:latest
+    image: ghcr.io/sadraiiali/madmail:latest
     environment:
       - MADDY_HOSTNAME=mail.yourdomain.com
       - MADDY_DOMAIN=yourdomain.com
@@ -101,11 +101,11 @@ If certificates are not mounted, copy them to the container as described above.
 
 ### 1. Install Maddy Chatmail
 
-Download the latest release from the [GitHub releases page](https://github.com/sadraiiali/maddy_chatmail/releases):
+Download the latest release from the [GitHub releases page](https://github.com/sadraiiali/madmail/releases):
 
 ```bash
 # Download and extract
-wget https://github.com/sadraiiali/maddy_chatmail/releases/download/v0.8.3/maddy-linux-amd64.tar.gz
+wget https://github.com/sadraiiali/madmail/releases/download/v0.8.3/maddy-linux-amd64.tar.gz
 tar -xzf maddy-linux-amd64.tar.gz
 sudo mv maddy /usr/local/bin/
 
@@ -474,7 +474,7 @@ sudo systemctl reload maddy
 
 - Check the [Maddy documentation](https://maddy.email)
 - Join the IRC channel: `#maddy` on `irc.oftc.net`
-- File issues on [GitHub](https://github.com/sadraiiali/maddy_chatmail)
+- File issues on [GitHub](https://github.com/sadraiiali/madmail)
 
 ## Security Considerations
 
@@ -561,4 +561,4 @@ server {
 
 ## Contributing
 
-This chatmail implementation is based on the Maddy Mail Server. Contributions to improve chatmail functionality are welcome on the [GitHub repository](https://github.com/sadraiiali/maddy_chatmail).
+This chatmail implementation is based on the Maddy Mail Server. Contributions to improve chatmail functionality are welcome on the [GitHub repository](https://github.com/sadraiiali/madmail).

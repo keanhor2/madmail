@@ -21,8 +21,8 @@ package msgpipeline
 import (
 	"testing"
 
-	"github.com/sadraiiali/maddy_chatmail/framework/module"
-	"github.com/sadraiiali/maddy_chatmail/internal/testutils"
+	"github.com/sadraiiali/madmail/framework/module"
+	"github.com/sadraiiali/madmail/internal/testutils"
 )
 
 func TestMsgPipeline_Issue161(t *testing.T) {
